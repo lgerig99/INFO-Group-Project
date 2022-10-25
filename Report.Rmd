@@ -1,7 +1,37 @@
 ---
 title: "Report"
-author: "Logan Gerig"
+author: "Logan Gerig - Han Xu"
 date: "`r Sys.Date()`"
 output: html_document
 ---
+
+
+```{r, set-chunk-opts, echo = FALSE, eval = TRUE}
+library(knitr)
+opts_chunk$set(
+  echo = FALSE, warning = FALSE, message = FALSE
+)
+```
+
+```{r, load-data}
+here::i_am("Report.Rmd")
+data <- readRDS(
+  file = here::here("Output/data_clean.rds")
+)
+```
+
+
+# Descriptive Analysis
+
+## Tabular analysis
+
+Characteristics of the `r nrow(data)` videos from the course engagement database are displayed
+in the table below.
+
+```{r, table1, warning=FALSE}
+table_one <- readRDS(
+  file = here::here("Output/table_one.rds")
+)
+table_one
+```
 
