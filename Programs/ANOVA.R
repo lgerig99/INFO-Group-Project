@@ -1,7 +1,7 @@
 library("lubridate")
 here::i_am("Programs/ANOVA.R")
 
-data <- read.csv(here::here("Data/course_engagement.csv"))
+data <- readRDS(file = here::here("Output/data_clean.rds"))
 data
 str(data$length)
 
