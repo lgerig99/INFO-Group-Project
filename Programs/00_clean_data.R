@@ -3,6 +3,7 @@ absolute_path_to_data <- here::here("Data", "course_engagement.csv")
 data <- read.csv(absolute_path_to_data, header = TRUE)
 data2 <- read.csv(absolute_path_to_data, header = TRUE)
 
+install.packages("lubridate")
 library(labelled)
 library(gtsummary)
 
