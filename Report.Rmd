@@ -35,3 +35,11 @@ table_one <- readRDS(
 table_one
 ```
 
+Zhanxu's ANOVA table
+```{r}
+ANOVA <- readRDS(
+  file = here::here("Output/summary_anova.rds")
+)
+ANOVA
+```
+From the ANOVA table, we can conclude that there is no statistically significantly difference between video length within 6 weeks.
