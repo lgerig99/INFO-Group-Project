@@ -1,4 +1,4 @@
-here::i_am("Programs/make_scatterplot.R")
+here::i_am("Programs/make_scatterplot_gb.R")
 
 library(ggplot2)
 library(dplyr)
