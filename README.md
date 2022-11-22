@@ -24,12 +24,29 @@ The project directory contains the directory with the following:
   2) Code -> Contains the R scripts used to create the report (programs 0-4)
      00 = Creating clean dataset that is used in subsequent programs
      01 = Creating summary table that prints an output 
-     02 = Conducting ANOVA that is sent to output folder
+     02 = Conducting ANOVA that is sent to output folder for all 6 weeks
      03 = Makes two scatterplots of video views and length and sends to output
      04 = Assembles the report.rmd into an HTML
   
   3) Output -> Intermediate output from the R scripts that will later be used for the report             (scatterplot/anova results/table1)
     
 # Creating the Report
-To create the report HTML, open up a git terminal and type in `make`, or `make report.html`. Additionally, there will be parameter options added soon that will enable you to enter a Wes-Anderson movie to change the color of the scatterplot and a parameter option to pick which week(s) to conduct an ANOVA on video length and views.
-    
+To create the report HTML, open up a git terminal and type in `make`, or `make report.html`.
+
+# Adding customizable options to the report
+The report HTML can be customized in two distinct ways:
+  1) You can change the number of weeks (out of 6) that are used by the ANOVA by 
+     typing in the terminal `make anovaweeks = (> # of weeks you wish to use)`. Default
+     is all 6 weeks (> 0 weeks) for the ANOVA.
+  
+  2) The color scale of the scatterplots using the Viridis color pallete for the number of weeks. 
+     This can be done by typing in the terminal `make colorscale = {"color scale you wish to use"}`.
+     The available options are listed here:
+     1) Viridis
+     2) Magma (the default)
+     3) Plasma
+     4) Inferno
+     5) Cividis
+     6) Mako
+     7) rocket
+     8) turbo

@@ -4,7 +4,7 @@ library(ggplot2)
 library(dplyr)
 
 scalecolor<-viridis::scale_color_viridis(option = Sys.getenv("colorscale"), discrete = TRUE)
-
+scalecolor<-viridis::scale_color_viridis(option = "magma", discrete = TRUE)
 
 ## load data
 
