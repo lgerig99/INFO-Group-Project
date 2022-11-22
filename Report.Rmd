@@ -36,6 +36,9 @@ table_one <- readRDS(
 table_one
 ```
 
+# Statistical Analysis
+## Via ANOVA
+
 Zhanxu's ANOVA table
 ```{r ANOVA, echo = FALSE}
 ANOVA <- readRDS(
@@ -43,8 +46,11 @@ ANOVA <- readRDS(
 )
 ANOVA
 ```
-**When the p-value is < 0.05, we reject the null hypothesis and conclude that there is not a statistically significant difference in the average view length across the weeks selected.**
+**When the p-value is < 0.05, we reject the null hypothesis and conclude that there is a statistically significant difference in the average view length across the weeks selected. Otheriwse, we fail to reject and conclude that there is not a significant difference in the average view length across the weeks selected.**
 
+
+# Visual Analysis
+## Scatterplots
 
 
 Grace's ScatterPlots
