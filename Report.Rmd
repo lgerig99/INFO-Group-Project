@@ -13,6 +13,7 @@ opts_chunk$set(
 )
 ```
 
+
 ```{r, load-data}
 here::i_am("Report.Rmd")
 data <- readRDS(
@@ -43,3 +44,20 @@ ANOVA <- readRDS(
 ANOVA
 ```
 From the ANOVA table, we can conclude that there is no statistically significantly difference between video length within 6 weeks.
+
+Grace's ScatterPlots
+```{r}
+views_scatter<-knitr::include_graphics("Output/views_scatter.png")
+
+unq_viewers_scatter<-knitr::include_graphics("Output/unq_viewers_scatter.png")
+
+views_scatter
+
+unq_viewers_scatter
+```
+
+
+
+
+
+

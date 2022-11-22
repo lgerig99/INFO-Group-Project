@@ -1,7 +1,5 @@
-here::i_am("Programs/06_render_report.R")
+here::i_am("Programs/04_render_report.R")
 
-library(rmarkdown)
-
-render(
-  "Report.Rmd"
+rmarkdown::render(
+  here::here("Report.Rmd")
 )

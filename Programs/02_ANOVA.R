@@ -1,5 +1,5 @@
 library("lubridate")
-here::i_am("Programs/03_ANOVA.R")
+here::i_am("Programs/02_ANOVA.R")
 
 datapath <- here::here("Data/course_engagement.csv")
 data <- read.csv(datapath, header = TRUE)
@@ -45,9 +45,8 @@ convert_hh_mm_ss_to_numeric <- function(x){
 
 data$length_n <- convert_hh_mm_ss_to_numeric(data$length)
 
+data1<-data[data$week > Sys.getenv("anovaweeks"), ]
 
-plant.aov <- aov(length_n ~ week, data = data)
+plant.aov <- aov(length_n ~ week, data = data1)
 summary_anova<-summary(plant.aov)
 saveRDS(summary_anova,file = here::here("Output/summary_anova.rds"))
-
-
