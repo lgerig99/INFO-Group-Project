@@ -36,11 +36,11 @@ To create the report HTML, open up a git terminal and type in `make`, or `make r
 # Adding customizable options to the report
 The report HTML can be customized in two distinct ways:
   1) You can change the number of weeks (out of 6) that are used by the ANOVA by 
-     typing in the terminal `make anovaweeks = (> # of weeks you wish to use)`. Default
+     typing in the terminal `make anovaweeks=(> # of weeks you wish to use)`. Default
      is all 6 weeks (> 0 weeks) for the ANOVA.
   
   2) The color scale of the scatterplots using the Viridis color pallete for the number of weeks. 
-     This can be done by typing in the terminal `make colorscale = {"color scale you wish to use"}`.
+     This can be done by typing in the terminal `make colorscale={"color scale you wish to use"}`.
      The available options are listed here:
      1) Viridis
      2) Magma (the default)
@@ -50,3 +50,5 @@ The report HTML can be customized in two distinct ways:
      6) Mako
      7) rocket
      8) turbo
+*IMPORTANT: do not have any spaced when you type in the customization option*
+ex) `make anovaweeks=3` and not `make anovaweeks = 5`
