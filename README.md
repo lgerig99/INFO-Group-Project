@@ -32,6 +32,8 @@ The project directory contains the directory with the following:
     
 # Creating the Report
 To create the report HTML, open up a git terminal and type in `make`, or `make report.html`.
+If you wish to first synchonize the packages used in the report with yours on your device,
+type `make install` in the terminal before typing `make`.
 
 # Adding customizable options to the report
 The report HTML can be customized in two distinct ways:
