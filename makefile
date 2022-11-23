@@ -1,6 +1,6 @@
 export anovaweeks := 0
 
-export colorscale := "magma"
+export colorscale := magma
 
 Report.html: Report.Rmd Programs/04_render_report.R cleandata table_one ANOVA Plots 
 	Rscript Programs/04_render_report.R

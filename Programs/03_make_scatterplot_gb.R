@@ -2,9 +2,9 @@ here::i_am("Programs/03_make_scatterplot_gb.R")
 
 library(ggplot2)
 library(dplyr)
+library(viridis)
 
 scalecolor<-viridis::scale_color_viridis(option = Sys.getenv("colorscale"), discrete = TRUE)
-scalecolor<-viridis::scale_color_viridis(option = "magma", discrete = TRUE)
 
 ## load data
 

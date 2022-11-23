@@ -40,7 +40,7 @@ The report HTML can be customized in two distinct ways:
      is all 6 weeks (> 0 weeks) for the ANOVA.
   
   2) The color scale of the scatterplots using the Viridis color pallete for the number of weeks. 
-     This can be done by typing in the terminal `make colorscale={"color scale you wish to use"}`.
+     This can be done by typing in the terminal `make colorscale=(color scale you wish to use)`.
      The available options are listed here:
      1) Viridis
      2) Magma (the default)
@@ -51,4 +51,4 @@ The report HTML can be customized in two distinct ways:
      7) rocket
      8) turbo
 *IMPORTANT: do not have any spaced when you type in the customization option*
-ex) `make anovaweeks=3` and not `make anovaweeks = 5`
+ex) `make anovaweeks=3` or `make colorscale=turbo` and not `make anovaweeks = 5`
